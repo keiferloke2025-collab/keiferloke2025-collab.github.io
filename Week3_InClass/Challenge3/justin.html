@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3 - Justin</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark w-100" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="#" >Bieber Fever</a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarMenu"
+                        aria-controls="navbarMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Task 1
+             - Gallery Carousel Placeholder
+             - Add your carousel here 
+             - Slideshow image files are:
+                justin1.jpg
+                justin2.jpg
+                justin3.jpg
+        -->
+    <div class="mx-auto box">
+        <div id="justin-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#justin-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#justin-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#justin-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-none d-md-block">
+                        <img src="./justin1.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="d-none d-md-block">
+                        <img src="./justin2.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="d-none d-md-block">
+                        <img src="./justin3.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#justin-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#justin-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </div>
+    
+
+    <div class="container">
+
+        <!-- Task 1
+             - Add a navigtion bar
+        --
+
+        <div class="row">
+            <!-- Task 1
+                 - The text such as Heading and Paragraph must be horizontally centered (Use appropriate Bootstrap classes)
+                 - There should be some margin at the Top and at the Bottom of the text (Use appropriate Bootstrap classes)
+            -->
+            <div class="col-12">
+                <h1>Justin Bieber Fan Page</h1>
+                <p class="lead">A simple fan page dedicated to the Beliebers!</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- Task 2
+                    Add your columns here -->
+            <div class="col-md col-12">
+                <img class="img-fluid max-height=50% " src="./justin_concert.jpg">
+            </div>
+
+            <!-- You can find Justin's photo in Challenge1/justin_concert.jpg -->
+            
+            <!-- Here's Justin's biography 
+            
+            About Justin Bieber
+
+            Justin Drew Bieber was born on March 1, 1994, in Stratford, Ontario, Canada. He was raised by his mother, Pattie Mallette. She worked at several jobs to support herself and her son. As a young child, Justin loved to play chess and sports, especially hockey and soccer. He also loved music and learned to play guitar, drums, piano, and trumpet.
+
+            In 2007, he entered a local singing contest and won second place. His mother posted a video of his performance on YouTube. She later added other homemade videos of Justin singing and playing guitar. A music promoter saw Justin's videos and invited him to record songs at a studio in Atlanta, Georgia. While there, Justin met Usher. Usher helped Justin get a record deal in late 2008.
+
+            -->
+            <div class="col-md col-12">
+                <h2>
+                     About Justin Bieber
+                </h2>
+                <p>Justin Drew Bieber was born on March 1, 1994, in Stratford, Ontario, Canada. He was raised by his mother, Pattie Mallette. She worked at several jobs to support herself and her son. As a young child, Justin loved to play chess and sports, especially hockey and soccer. He also loved music and learned to play guitar, drums, piano, and trumpet.
+                </p>
+                <p>
+                    In 2007, he entered a local singing contest and won second place. His mother posted a video of his performance on YouTube. She later added other homemade videos of Justin singing and playing guitar. A music promoter saw Justin's videos and invited him to record songs at a studio in Atlanta, Georgia. While there, Justin met Usher. Usher helped Justin get a record deal in late 2008.  
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Buttons and Alerts -->
+        <div class="row">
+            <button class="btn btn-custom mb-3 mt-3" onclick="alert('You are now a Belieber!')">Join the Beliebers</button>
+            <a href="https://www.justinbiebermusic.com" class="btn btn-primary" target="_blank">Learn More</a>
+
+            <!-- Task 2
+             - Modal Button
+             - Add a button here to trigger the modal -->
+            <button type="button"
+                    class="btn btn-success mb-3 mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#feedbackModal">
+                    Sign Up for fan club
+            </button>
+                
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade"
+            id="feedbackModal"
+            tabindex="-1"
+            aria-labelledby="feedbackModalLabel"
+            aria-hidden="true">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="feedbackModalLabel">
+                            Join the Justin Bieber Fan Club
+                        </h5>
+
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close">
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form>
+
+                        <div class="modal-body">
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">
+                                    Name
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input type="email"
+                                    class="form-control"
+                                    id="email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">
+                                    Why do you love justin?
+                                </label>
+
+                                <textarea class="form-control"
+                                        id="message"
+                                        rows="3"></textarea>
+                            </div>
+
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="modal-footer">
+
+                            <button type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal">
+                                Close
+                            </button>
+
+                            <button type="submit"
+                                    class="btn btn-success">
+                                Submit
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
